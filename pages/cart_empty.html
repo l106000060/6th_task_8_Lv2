@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="bg-neutral-15">
+      <!-- 空購物車區塊   -->
+      <section class="pt-29 pb-15">
+        <div class="container max-w-258">
+          <!-- 圖片 -->
+          <div class="mb-4">
+            <img
+              class="max-w-240"
+              src="../assets/images/empty-cart.png"
+              alt="空購物車"
+            />
+          </div>
+          <!-- 說明 -->
+          <div class="mb-4">
+            <h2 class="mb-0 fs-6 fw-semibold text-neutral-80 text-center">
+              購物車還沒有商品，立即逛逛！
+            </h2>
+          </div>
+          <!-- 看看其他行程按鈕 -->
+          <div class="d-flex flex-column">
+            <a
+              class="btn btn-primary-100 btn-lg fs-6 text-white fw-semibold border border-primary-100 btn-border-radius-lg justify-content-center"
+              type="submit"
+              href="index.html"
+            >
+              看看其他行程
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 其他人也買了輪播區塊 -->
+      <section class="py-12">
+        <!-- 商品輪播 -->
+        <div class="container">
+            <!-- 標題 -->
+            <div class="mb-4">
+                <h2 class="mb-0 fs-2 text-primary-100 fw-bold lh-sm"># 其他旅人也買了</h2>
+            </div>
+            <!-- 輪播-->
+            <!-- 卡片 -->
+            <div class="position-relative">
+                <div class="row flex-nowrap scroll">
+                <!-- 環球影城 -->
+                <div class="col-10 col-lg-5 col-xl-3">
+                    <div class="card border-0 bg-neutral-15">
+                    <!-- 卡片圖片 -->
+                    <div class="mb-3 position-relative">
+                        <span
+                        class="material-symbols-outlined p-3 text-white bg-black blur-12 opacity-40 position-absolute btn-border-radius-20 border-radius-top-start-0 border-radius-bottom-end-0"
+                        style="right: 0"
+                        >
+                        favorite
+                        </span>
+                        <img
+                        src="../assets/images/top-1.png"
+                        class="card-img-top btn-border-radius-20"
+                        alt="環球影城"
+                        />
+                    </div>
+
+                    <!-- 卡片內容 -->
+                    <div
+                        class="p-0 mb-3 card-body border-bottom border-neutral-40"
+                    >
+                        <!-- 卡片標題 -->
+                        <div class="mb-2 h-58">
+                        <h5 class="card-title mb-0 fs-6 fw-bold">
+                            【環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                        </h5>
+                        </div>
+                        <!-- 卡片標籤 -->
+                        <div class="mb-2 d-flex">
+                        <span
+                            class="badge me-2 py-1 px-2 rounded-1 bg-primary-10 fw-semiibold text-primary-100"
+                            >即買即用</span
+                        >
+                        <span
+                            class="badge py-1 px-2 rounded-1 bg-primary-10 fw-semibold text-primary-100"
+                            >5 天前可免費取消</span
+                        >
+                        </div>
+                        <!-- 評價、銷量 -->
+                        <div class="mb-3">
+                        <p>
+                            <span class="pe-7">
+                            <span>
+                                <img
+                                class="max-w-12"
+                                src="../assets/images/star.png"
+                                alt="星星"
+                                />
+                            </span>
+                            <span class="fs-7 text-neutral-80"> 4.8 </span>
+                            <span class="fs-7 text-neutral-60"> (1029) </span>
+                            </span>
+                            <span
+                            class="ps-7 fs-7 text-neutral-80 border-start border-neutral-40"
+                            >
+                            1000+ 個已訂購
+                            </span>
+                        </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="mb-0 fs-5 text-primary-100 fw-bold">
+                        NT$ 5,480
+                        </h3>
+                        <p class="mb-0 fs-6 neutral-3 text-decoration-line-through">
+                        NT$ 6,200
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 奈良 -->
+                <div class="col-10 col-lg-5 col-xl-3">
+                    <div class="card border-0 bg-neutral-15">
+                    <!-- 卡片圖片 -->
+                    <div class="mb-3">
+                        <span
+                        class="material-symbols-outlined p-3 text-white bg-black blur-12 opacity-40 position-absolute btn-border-radius-20 border-radius-top-start-0 border-radius-bottom-end-0"
+                        style="right: 0"
+                        >
+                        favorite
+                        </span>
+                        <img
+                        src="../assets/images/top-2.png"
+                        class="card-img-top btn-border-radius-20"
+                        alt="奈良"
+                        />
+                    </div>
+
+                    <!-- 卡片內容 -->
+                    <div
+                        class="p-0 mb-3 card-body border-bottom border-neutral-40"
+                    >
+                        <!-- 卡片標題 -->
+                        <div class="mb-2 h-58">
+                        <h5 class="card-title mb-0 fs-6 fw-bold">
+                            奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                        </h5>
+                        </div>
+                        <!-- 卡片標籤 -->
+                        <div class="mb-2 d-flex">
+                        <span
+                            class="badge me-2 py-1 px-2 rounded-1 bg-primary-10 fw-semiibold text-primary-100"
+                            >中文導覽</span
+                        >
+                        <span
+                            class="badge py-1 px-2 rounded-1 bg-primary-10 fw-semibold text-primary-100"
+                            >5 天前可免費取消</span
+                        >
+                        </div>
+                        <!-- 評價、銷量 -->
+                        <div class="mb-3">
+                        <p>
+                            <span class="pe-7">
+                            <span>
+                                <img
+                                class="max-w-12"
+                                src="../assets/images/star.png"
+                                alt="星星"
+                                />
+                            </span>
+                            <span class="fs-7 text-neutral-80"> 4.7 </span>
+                            <span class="fs-7 text-neutral-60"> (880) </span>
+                            </span>
+                            <span
+                            class="ps-7 fs-7 text-neutral-80 border-start border-neutral-40"
+                            >
+                            900+ 個已訂購
+                            </span>
+                        </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="mb-0 fs-5 text-primary-100 fw-bold">
+                        NT$ 2,250
+                        </h3>
+                        <p class="mb-0 fs-6 neutral-3 text-decoration-line-through">
+                        NT$ 2,800
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 黑門市場 -->
+                <div class="col-10 col-lg-5 col-xl-3">
+                    <div class="card border-0 bg-neutral-15">
+                    <!-- 卡片圖片 -->
+                    <div class="mb-3">
+                        <span
+                        class="material-symbols-outlined p-3 text-white bg-black blur-12 opacity-40 position-absolute btn-border-radius-20 border-radius-top-start-0 border-radius-bottom-end-0"
+                        style="right: 0"
+                        >
+                        favorite
+                        </span>
+                        <img
+                        src="../assets/images/top-3.png"
+                        class="card-img-top btn-border-radius-20"
+                        alt="黑門市場"
+                        />
+                    </div>
+
+                    <!-- 卡片內容 -->
+                    <div
+                        class="p-0 mb-3 card-body border-bottom border-neutral-40"
+                    >
+                        <!-- 卡片標題 -->
+                        <div class="mb-2 h-58">
+                        <h5 class="card-title mb-0 fs-6 fw-bold">
+                            黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                        </h5>
+                        </div>
+                        <!-- 卡片標籤 -->
+                        <div class="mb-2 d-flex">
+                        <span
+                            class="badge me-2 py-1 px-2 rounded-1 bg-primary-10 fw-semiibold text-primary-100"
+                            >專業導覽</span
+                        >
+                        <span
+                            class="badge py-1 px-2 rounded-1 bg-primary-10 fw-semibold text-primary-100"
+                            >5 天前可免費取消</span
+                        >
+                        </div>
+                        <!-- 評價、銷量 -->
+                        <div class="mb-3">
+                        <p>
+                            <span class="pe-7">
+                            <span>
+                                <img
+                                class="max-w-12"
+                                src="../assets/images/star.png"
+                                alt="星星"
+                                />
+                            </span>
+                            <span class="fs-7 text-neutral-80"> 4.6 </span>
+                            <span class="fs-7 text-neutral-60"> (540) </span>
+                            </span>
+                            <span
+                            class="ps-7 fs-7 text-neutral-80 border-start border-neutral-40"
+                            >
+                            700+ 個已訂購
+                            </span>
+                        </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="mb-0 fs-5 text-primary-100 fw-bold">
+                        NT$ 1,580
+                        </h3>
+                        <p class="mb-0 fs-6 neutral-3 text-decoration-line-through">
+                        NT$ 2,500
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 夜景直升機 -->
+                <div class="col-10 col-lg-5 col-xl-3">
+                    <div class="card border-0 bg-neutral-15">
+                    <!-- 卡片圖片 -->
+                    <div class="mb-3">
+                        <span
+                        class="material-symbols-outlined p-3 text-white bg-black blur-12 opacity-40 position-absolute btn-border-radius-20 border-radius-top-start-0 border-radius-bottom-end-0"
+                        style="right: 0"
+                        >
+                        favorite
+                        </span>
+                        <img
+                        src="../assets/images/top-4.png"
+                        class="card-img-top btn-border-radius-20"
+                        alt="墨爾本"
+                        />
+                    </div>
+
+                    <!-- 卡片內容 -->
+                    <div
+                        class="p-0 mb-3 card-body border-bottom border-neutral-40"
+                    >
+                        <!-- 卡片標題 -->
+                        <div class="mb-2 h-58">
+                        <h5 class="card-title mb-0 fs-6 fw-bold">
+                            大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                        </h5>
+                        </div>
+                        <!-- 卡片標籤 -->
+                        <div class="mb-2 d-flex">
+                        <span
+                            class="badge me-2 py-1 px-2 rounded-1 bg-primary-10 fw-semiibold text-primary-100"
+                            >即買即用</span
+                        >
+                        <span
+                            class="badge py-1 px-2 rounded-1 bg-primary-10 fw-semibold text-primary-100"
+                            >7 天前可免費取消</span
+                        >
+                        </div>
+                        <!-- 評價、銷量 -->
+                        <div class="mb-3">
+                        <p>
+                            <span class="pe-7">
+                            <span>
+                                <img
+                                class="max-w-12"
+                                src="../assets/images/star.png"
+                                alt="星星"
+                                />
+                            </span>
+                            <span class="fs-7 text-neutral-80"> 4.7 </span>
+                            <span class="fs-7 text-neutral-60"> (319) </span>
+                            </span>
+                            <span
+                            class="ps-7 fs-7 text-neutral-80 border-start border-neutral-40"
+                            >
+                            600+ 個已訂購
+                            </span>
+                        </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="mb-0 fs-5 text-primary-100 fw-bold">
+                        NT$ 6,890
+                        </h3>
+                        <p class="mb-0 fs-6 neutral-3 text-decoration-line-through">
+                        NT$ 8,890
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 按鈕 -->
+                <button
+                    type="button"
+                    class="btn btn-white p-3 rounded-3 max-w-56 position-absolute top-50 left--70 shadow translate-middle-y d-none d-xxxl-flex"
+                >
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-white p-3 rounded-3 max-w-56 position-absolute top-50 right--70 shadow translate-middle-y d-none d-xxxl-flex"
+                >
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+                </div>
+            </div>
+
+                <!-- 按鈕 xxl 1430px 以下出現 -->
+                <div class="d-flex justify-content-end d-xxxl-none">
+                    <button
+                    type="button"
+                    class="btn btn-white me-3 p-3 rounded-3 max-w-56 d-none d-xl-flex shadow"
+                    >
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+
+                    <button
+                    type="button"
+                    class="btn btn-white p-3 rounded-3 max-w-56 d-none d-xl-flex shadow"
+                    >
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+        </div>
+
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
